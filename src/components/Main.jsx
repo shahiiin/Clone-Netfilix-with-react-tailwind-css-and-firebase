@@ -14,10 +14,19 @@ const Main = () => {
             setMovies(response.data.results)
         })
     }, [])
-    console.log(movie, 'aa')
+
 
     return (
-        <div>Main</div>
+        <div className='w-full h-[550px] text-white'>
+            <div className='w-full h-full'>
+                <div className='w-full h-[550px] bg-gradient-to-r from-black'>
+                    <img src={`https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`} alt={movie?.title} className="w-full h-full object-fit" />
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     )
 }
 
