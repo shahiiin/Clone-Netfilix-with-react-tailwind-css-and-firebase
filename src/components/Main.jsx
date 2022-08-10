@@ -1,0 +1,13 @@
+import React, { useState } from 'react'
+import request from "../Request"
+const Main = () => {
+
+    const [movies, setMovies] = useState([])
+
+
+    return (
+        <div>Main</div>
+    )
+}
+
+export default Main
